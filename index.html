@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Youtube</title>
+        <link rel="stylesheet" href="estilo.css"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="reset.css">
+    </head>
+
+    <body>
+        <header class="cabecalho">
+            <!--LOGO-->
+            
+            <div class="coluna">
+                <figure>
+                    <a href="https://www.youtube.com/" target="_blank">
+                    <img id="fotoYoutube" target="_b" src="./img/logo.png" alt="Youtube"></a>
+                </figure>
+            </div>
+
+            <!--ABA DE PESQUISA-->
+            <div class="colunaPesquisa">
+                <div class="pesquisa">
+                    <input type="text" name="pesquisa" id="pesquisa" placeholder="Pesquisar" >
+                    <button>
+                        <img width="13px" src="./img/pesquisa.svg" alt="">
+                    </button>
+                </div>
+            </div>
+
+            <!--foto do usuario-->
+            <div class="colunaFoto">
+                <figure class="imagemUsuario">
+                    <a href="https://www.youtube.com/" target="_blank">
+                    <img src="./img/usuario.jpg" alt="foto usuario" id="fotoUsuario">
+                    </a>
+                </figure>
+            </div>
+        </header>
+
+        <main>
+            <div class="AbaDestaque">
+                <!--BANNER-->
+                <div class="destaqueCanal"></div>
+
+                <!--ABA DO CANAL-->
+                <section class="secaoCanal">
+
+                    <!--LOGO DO CANAL-->
+                    <div class="conteiner">
+                        <div class="detalheCanal">
+                            <figure>
+                                <img src="./img/logocanal.jpg" alt="Kenzie Academy Brasil">
+                            </figure>
+
+                            <!--NOME E INSCRITOS-->
+                            <div class="detalheCanal_info">
+                                <h1>Kenzie Academy Brasil</h1>
+                                <p>88,5 mil inscritos</p>
+                            </div>
+                        </div>
+                        <!--PARTE DE MENU DO CANAL-->
+                        <!--tag NAV serve para indicar que naquela area tem navegação por meio de links-->
+                        <nav class="navegacaoCanal">
+                            <ul>
+                                <li>
+                                    <a href="">inicío</a>
+                                </li>
+
+                                <li>
+                                    <a href="">Vídeos</a>
+                                </li>
+
+                                <li>
+                                    <a href="">Playlists</a>
+                                </li>
+
+                                <li>
+                                    <a href="">Comunidade</a>
+                                </li>
+
+                                <li>
+                                    <a href="">Canais</a>
+                                </li>
+
+                                <li>
+                                    <a href="">Sobre</a>
+                                </li>
+
+                                <li>
+                                    <button>
+                                        <img src="./img/pesquisa.svg" alt="lupa pesquisa">
+                                    </button>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </section>
+            </div>
+            <!--ABA DESTAQUE -->
+            <div class="containerDeVideos">
+
+                <!--COLUNA DA ESQUERDA-->
+                <div class="coluna">
+                    <section class="secaoVideosDestaque">
+                        <h2>Conheça mais sobre a Kenzie Academy Brasil</h2>
+                        <ul class="Listavideos">
+                        </ul>
+                    </section>
+                </div>
+
+                <!--COLUNA DA DIREITA-->
+                <div class="coluna2">
+                    <section class="secaoAdicionarFila">
+                        <header class="aFila">
+                            <h2>Fila de reprodução</h2>
+                            <P>Kenzie Academy Brasil</P>
+                        </header>
+                        <ul class="secaoAFila">    
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        
+            <section class="secaoTodosVideos">
+                <div class="container"></div>
+                    <header class="reproducao">
+                        <h2><img src="./img/play.svg" alt=""> Reproduzir todos</h2>
+                    </header>
+                    <ul class="Listavideos2"></ul>
+                </div>
+            </section>
+            <script src="Script.js"></script>
+            <script src="./aula/aula.js"></script>
+        </main>
+    </body>
+</html>

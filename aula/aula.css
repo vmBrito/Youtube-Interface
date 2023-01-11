@@ -1,0 +1,115 @@
+/* O ID SEMPRE TEM QUE SER UNICO, VOCÊ NAO PODE APLICAR PARA MAIS DE UM ITEM,JÁ A CLASSE */
+/* CSS => Cascading StyleSheet(Folha de estilo em cascata) */
+
+/* Anatomia do CSS
+
+seletor {
+    propriedade: valor da propriedade; => declaração CSS
+    cor: vermelho;
+} => regra CSS
+*/
+
+/* Tipos de seletores */
+
+/* Seletor por nome de elemento/nome de tag */
+header {
+    background-color: cadetblue;
+}
+
+/* p {
+    background-color: cornflowerblue;
+} */
+
+/* Seletor por classe */
+.textoSobreMim {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+
+/* Seletor por ID */
+#secaoSobreMim {
+    background-color:bisque;
+    display: flex;
+    justify-content:space-around;
+    align-items:baseline;
+}
+
+#secaoSobreMim h2{
+    background-color: tomato;
+}
+
+#secaoSobreMim li#napoleao{
+    background-color: aqua;
+    
+}
+
+#secaoSobreMim li#gilberto{
+    background-color: blueviolet;
+}
+
+#secaoSobreMim li#justin{
+    background-color: yellow;
+}
+
+#secaoSobreMim li#sergio{
+    display: flex;
+    background-color: violet;
+    
+}
+
+#sergio a{
+    display: inline-block;
+}
+
+/* Fontes */
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+
+/*DIMENSIONAMENTO = LARGURA E ALTURA */
+div.divDeTeste{
+    background-color: aquamarine;
+    width: 300px;
+    display: block;
+}
+
+/*Elementos em bloco consomem todo o espaço da tela, um header, uma section, lista, ul, h1, são tags que ocupam a tela enteira
+e quebram a linha antes e depois
+
+já os inline o seu tamanho é determinado pelo seu conteudo,tags de link e nao conseguimos estilizar largura e altura
+em uma tag inline, mas o javascript permite mudar isso e alterar, transformando o display block em inline ou vice versa
+
+
+e temos o inline-block, que é um inline com privilegios de block já que conseguimos mudar altura e largura
+documento inline, nao quebra linha nem nada, mas voce pode mudar largura e altura
+estudar grid
+
+/* FLEXBOX */
+.exemplo{
+    display: flex;
+    justify-content:flex-end;
+    align-items: flex-end;
+    height: 300px;
+    background-color: cornflowerblue;
+
+}
+.exemplo div{
+    width: 200px;
+    height: 200px;
+
+}
+
+.div1{
+    background-color: aqua;
+}
+.div2{
+    background-color: bisque;
+}
+.div3{
+    background-color: blueviolet;
+}
+
+/* O FLEX BOX PARA MANIPULAR AS CAIXAS JÁ QUE DEIXA FLEXIVEL E PERMITINDO MELHOR CONTROLE SOBRE ELAS
+PRA USAR O FLEX BOX TEM QUE SER APLICADO NA DIV PAI
